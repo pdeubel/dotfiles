@@ -1,0 +1,11 @@
+[user]
+	email = {{ .email }}
+	name = {{ .name }}
+[core]
+	autocrlf = input
+
+# Useful for Jupyter Notebooks in git
+[filter "nbstrip_full"]
+	clean = jq --indent 1 \t        '(.cells[] | select(has(\"outputs\")) | .outputs) = []  \t        | (.cells[] | select(has(\"execution_count\")) | .execution_count) = null  \t        | .metadata = {\"language_info\": {\"name\": \"python\", \"pygments_lexer\": \"ipython3\"}} \t        | .cells[].metadata = {} \t        '
+	smudge = cat
+	required = true
