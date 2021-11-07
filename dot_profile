@@ -8,6 +8,13 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
+LOG="$HOME/profile-invocations"
+echo "-----" >>$LOG
+echo "Caller: $0" >>$LOG
+echo "DESKTOP_SESSION: $DESKTOP_SESSION" >>$LOG
+echo "GDMSESSION: $GDMSESSION" >>$LOG
+
+
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
@@ -28,5 +35,3 @@ export KAGGLE_CONFIG_DIR=$HOME/.config/kaggle
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 
 export DESKTOPINTEGRATION=false
-
-export QT_SCALE_FACTOR=1.5
