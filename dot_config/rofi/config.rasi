@@ -1,0 +1,5 @@
+configuration {
+ modi: "run";
+ theme: "gruvbox-dark";
+ font: "hack 14";
+}
