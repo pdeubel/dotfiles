@@ -194,10 +194,11 @@ exec --no-startup-id kdeconnect-indicator
 
 # > Automatic switching to workspaces <
 
-assign [class="^firefox"] $ws2
-assign [class="^jetbrains-toolbox"] $ws3
-assign [class="^jetbrains-pycharm"] $ws3
-assign [class="^Slack"] $ws4
+assign [class="^firefox$"] $ws2
+assign [class="^jetbrains-toolbox$"] $ws3
+assign [class="^jetbrains-pycharm$"] $ws3
+assign [class="^QtCreator$"] $ws3
+assign [class="^Slack$"] $ws4
 for_window [class="Spotify"] move to workspace $ws5
 
 # > Automatic putting workspaces to displays <
