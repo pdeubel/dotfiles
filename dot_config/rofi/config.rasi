@@ -1,5 +1,5 @@
 configuration {
- modi: "run";
+ modi: "run,clipboard:greenclip print";
  theme: "gruvbox-dark";
  font: "hack 14";
 }

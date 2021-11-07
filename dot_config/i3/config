@@ -70,6 +70,9 @@ bindsym $mod+Shift+q kill
 # Start Rofi
 bindsym $mod+d exec rofi -show run
 
+exec --no-startup-id greenclip daemon
+bindsym $mod+c exec rofi -show clipboard -run-command '{cmd}'
+
 # > Focus change <
 # >> home row <<
 bindsym $mod+j focus left
