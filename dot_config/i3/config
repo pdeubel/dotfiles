@@ -228,7 +228,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # > Locking <
 
 bindsym $mod+Control+l exec i3lock-fancy-rapid 10 3 
-exec --no-startup-id xset s 180 120
+exec --no-startup-id xset s 300 600
 exec --no-startup-id xss-lock -n $HOME/Scripts/dim-screen.sh -- i3lock-fancy-rapid 10 3
 
 # -------------------------------------------------------------
