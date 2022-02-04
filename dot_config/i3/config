@@ -36,7 +36,9 @@ exec --no-startup-id dunst
 
 # > Network
 
-# exec --no-startup-id nm-applet
+# Required to connect NetworkManager to Gnome Keyring, now you can save for example
+# VPN passwords in the keyring
+exec --no-startup-id nm-applet
 
 # -------------------------------------------------------------
 
