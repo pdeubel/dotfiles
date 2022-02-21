@@ -59,8 +59,8 @@ module-margin-left = 1
 module-margin-right = 2
 
 font-0 = hack:pixelsize=9;3
-font-1 = Font Awesome 5 Free,Font Awesome 5 Free Solid:style=Solid:pixelsize=9;3
-font-2 = Font Awesome 5 Brands,Font Awesome 5 Brands Regular:style=Regular:pixelsize=9;3
+font-1 = Font Awesome 6 Free,Font Awesome 6 Free Solid:style=Solid:pixelsize=9;3
+font-2 = Font Awesome 6 Brands,Font Awesome 6 Brands Regular:style=Regular:pixelsize=9;3
 font-3 = Noto Sans Symbols2:style=Solid;4
 
 modules-left = i3
@@ -99,8 +99,8 @@ inherit = bar/top
 height = 35 
 
 font-0 = hack:pixelsize=13;3
-font-1 = Font Awesome 5 Free,Font Awesome 5 Free Solid:style=Solid:pixelsize=13;3
-font-2 = Font Awesome 5 Brands,Font Awesome 5 Brands Regular:style=Regular:pixelsize=13;3
+font-1 = Font Awesome 6 Free,Font Awesome 6 Free Solid:style=Solid:pixelsize=13;3
+font-2 = Font Awesome 6 Brands,Font Awesome 6 Brands Regular:style=Regular:pixelsize=13;3
 font-3 = Noto Sans Symbols2:style=Solid;4
 
 enable-ipc = true
