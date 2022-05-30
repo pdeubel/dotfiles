@@ -1,0 +1,9 @@
+[".zsh/pure"]
+    type = "git-repo"
+    url = "https://github.com/sindresorhus/pure.git"
+    refreshPeriod = "168h"
+
+[".zsh/fzf"]
+    type = "git-repo"
+    url = "https://github.com/junegunn/fzf.git"
+    refreshPeriod = "168h"
