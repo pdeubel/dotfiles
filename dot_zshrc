@@ -97,3 +97,5 @@ function _comp-kdesrc-run
 
   return 0
 }
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
