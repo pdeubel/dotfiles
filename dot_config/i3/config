@@ -319,7 +319,9 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
 
-bindsym --release XF86WLAN exec --no-startup-id $HOME/Scripts/toggle-wifi.sh
+# For some reason pressing the fn+wlan key enables and disables wifi. Seems like another program is doing
+# this, but I do not know which one. For now I comment this out
+# bindsym XF86WLAN exec --no-startup-id $HOME/Scripts/toggle-wifi.sh
 
 # Gnome Keyring
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --replace --components=secrets,ssh
