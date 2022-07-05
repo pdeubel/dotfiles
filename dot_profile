@@ -35,3 +35,5 @@ export KAGGLE_CONFIG_DIR=$HOME/.config/kaggle
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 
 export DESKTOPINTEGRATION=false
+
+export BORG_PASSCOMMAND='secret-tool lookup borg-backup passphrase'
