@@ -1,15 +1,19 @@
 #!/bin/bash
 
+# Install some basic packages while also updating the system, do not use
+# --noconfirm here, but for the rest
 sudo pacman -Syu base-devel git nextcloud-client tlp tlp-rdw yay
 
-sudo pacman -S chromium firefox thunderbird
+sudo pacman -S --noconfirm chromium firefox thunderbird
 
-sudo pacman -S vim kate kile okular
+sudo pacman -S --noconfirm vim kate kile okular
 
-sudo pacman -S borg keepassxc seahorse gnome-keyring
+sudo pacman -S --noconfirm borg keepassxc seahorse gnome-keyring
 
-sudo pacman -S dolphin ark ranger
+sudo pacman -S --noconfirm dolphin ark ranger
 
-sudo pacman -S networkmanager network-manager-applet
+sudo pacman -S --noconfirm networkmanager network-manager-applet
 
+# This will also require user input, but I guess here it is fine as it
+# downloads packages from AUR
 yay -S anki spotify
