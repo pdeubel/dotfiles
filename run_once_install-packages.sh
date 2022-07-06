@@ -17,3 +17,9 @@ sudo pacman -S --noconfirm networkmanager network-manager-applet
 # This will also require user input, but I guess here it is fine as it
 # downloads packages from AUR
 yay -S anki spotify
+
+# Setup instructions for TLP
+systemctl enable tlp.service
+systemctl enable NetworkManager-dispatcher.service
+
+systemctl mask systemd-rfkill.service systemd-rfkill.socket
