@@ -6,7 +6,7 @@ sudo pacman -Syu base-devel git nextcloud-client tlp tlp-rdw yay
 
 sudo pacman -S --noconfirm chromium firefox thunderbird
 
-sudo pacman -S --noconfirm vim kate kile okular
+sudo pacman -S --noconfirm vim kate kdeconnect kile okular
 
 sudo pacman -S --noconfirm borg keepassxc seahorse gnome-keyring
 
@@ -14,9 +14,11 @@ sudo pacman -S --noconfirm dolphin ark ranger
 
 sudo pacman -S --noconfirm networkmanager network-manager-applet
 
+sudo pacman -S --noconfirm nitrogen polybar rofi
+
 # This will also require user input, but I guess here it is fine as it
 # downloads packages from AUR
-yay -S anki spotify
+yay -S anki rofi-greenclip spotify
 
 # Setup instructions for TLP
 systemctl enable tlp.service
