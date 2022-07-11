@@ -27,7 +27,9 @@ R /home/pdeubel
 - home/pdeubel/Android
 - home/pdeubel/Applications
 - home/pdeubel/cacheDir
-- home/pdeubel/NextcloudMatteoCloud
+# Include main nextcloud, but ignore others
++ home/pdeubel/Nextcloud
+- home/pdeubel/Nextcloud*
 # Docker volume of a local mailserver for debugging; ! means to not recurse
 # into that directory
 ! home/pdeubel/PycharmProjects/MOD-Beachvolleyball/mailserver
