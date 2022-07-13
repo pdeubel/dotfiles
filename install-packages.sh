@@ -14,7 +14,7 @@ sudo pacman -S --noconfirm dolphin ark ranger
 
 sudo pacman -S --noconfirm networkmanager network-manager-applet
 
-sudo pacman -S --noconfirm dunst nitrogen picom polybar rofi ttf-hack
+sudo pacman -S --noconfirm exa dunst nitrogen picom polybar rofi ttf-hack
 
 # This will also require user input, but I guess here it is fine as it
 # downloads packages from AUR
