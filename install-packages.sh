@@ -2,19 +2,14 @@
 
 # Install some basic packages while also updating the system, do not use
 # --noconfirm here, but for the rest
-sudo pacman -Syu base-devel git nextcloud-client tlp tlp-rdw yay
-
-sudo pacman -S --noconfirm chromium firefox thunderbird
-
-sudo pacman -S --noconfirm vim kate kdeconnect kile okular spectacle
-
-sudo pacman -S --noconfirm borg keepassxc seahorse gnome-keyring
-
-sudo pacman -S --noconfirm dolphin ark ranger
-
-sudo pacman -S --noconfirm networkmanager network-manager-applet
-
-sudo pacman -S --noconfirm exa dunst nitrogen picom polybar rofi ttf-font-awesome ttf-hack
+sudo pacman -Syu \
+   base-devel git nextcloud-client tlp tlp-rdw yay \
+   chromium firefox thunderbird \
+   vim kate konsole kdeconnect kile okular spectacle \
+   borg keepassxc seahorse gnome-keyring \
+   dolphin ark ranger \
+   networkmanager network-manager-applet \
+   exa dunst nitrogen picom polybar rofi ttf-font-awesome ttf-hack noto-fonts
 
 # This will also require user input, but I guess here it is fine as it
 # downloads packages from AUR
