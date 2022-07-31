@@ -9,7 +9,7 @@ sudo pacman -Syu \
    borg keepassxc seahorse gnome-keyring \
    dolphin ark ranger \
    networkmanager network-manager-applet \
-   exa dunst nitrogen picom polybar rofi ttf-font-awesome ttf-hack noto-fonts
+   exa dunst feh picom polybar rofi ttf-font-awesome ttf-hack noto-fonts
 
 # This will also require user input, but I guess here it is fine as it
 # downloads packages from AUR
