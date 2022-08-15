@@ -202,6 +202,7 @@ exec --no-startup-id kdeconnect-indicator
 assign [class="^firefox$"] $ws2
 assign [class="^jetbrains-toolbox$"] $ws3
 assign [class="^jetbrains-pycharm$"] $ws3
+assign [class="^jetbrains-idea$"] $ws3
 assign [class="^QtCreator$"] $ws3
 assign [class="^Slack$"] $ws4
 for_window [class="Spotify"] move to workspace $ws5
@@ -335,4 +336,6 @@ bindsym Print exec spectacle
 
 for_window [class="jadx-gui-JadxGUI"] floating enable
 
+# Garmin IQ SDK device virtualization
+for_window [class="Simulator"] floating enable
 for_window [title="test-gui-worldmodels"] floating enable
