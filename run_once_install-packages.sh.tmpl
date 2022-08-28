@@ -3,17 +3,35 @@
 # Install some basic packages while also updating the system, do not use
 # --noconfirm here, but for the rest
 sudo pacman -Syu \
-   base-devel git nextcloud-client tlp tlp-rdw yay \
+   base-devel git tlp tlp-rdw \
    chromium firefox thunderbird \
-   vim kate konsole kdeconnect kile okular spectacle \
-   borg keepassxc seahorse gnome-keyring \
+   vim kate konsole kile okular spectacle \
+   keepassxc seahorse gnome-keyring \
    dolphin ark ranger \
    networkmanager network-manager-applet \
-   exa dunst feh picom polybar rofi ttf-font-awesome ttf-hack noto-fonts
+   exa dunst feh picom polybar rofi ttf-font-awesome ttf-hack noto-fonts \
+   
+   {{- /* These packages will only be installed on a private laptop at home */ -}}
+   {{- if eq .machinetype "home" }}
+   nextcloud-client kdeconnect borg \
+   {{- end }}
+
+   {{- if eq .chezmoi.osRelease.id "manjaro" }}
+   yay
+   {{- end }}
+
+{{- if ne .chezmoi.osRelease.id "manjaro" }}
+git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-bin && cd /tmp/yay-bin && makepkg -si
+{{- end }}
 
 # This will also require user input, but I guess here it is fine as it
 # downloads packages from AUR
-yay -S anki i3lock-fancy-rapid-git rofi-greenclip spotify
+yay -S \
+    betterlockscreen rofi-greenclip spotify \
+    
+    {{- if eq .machinetype "home" }}
+    anki
+    {{- end }}
 
 # Setup instructions for TLP
 systemctl enable tlp.service
