@@ -62,7 +62,7 @@ font pango:Hack 10
 floating_modifier $mod
 
 # > Terminal <
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty
 
 # > Kill window key <
 bindsym $mod+Shift+q kill
