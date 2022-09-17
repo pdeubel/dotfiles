@@ -17,10 +17,10 @@ sudo pacman -Syu \
    {{- end }}
 
    {{- if eq .chezmoi.osRelease.id "manjaro" }}
-   yay
+   yay \
    {{- end }}
 
-{{- if ne .chezmoi.osRelease.id "manjaro" }}
+{{ if ne .chezmoi.osRelease.id "manjaro" }}
 git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-bin && cd /tmp/yay-bin && makepkg -si
 {{- end }}
 
