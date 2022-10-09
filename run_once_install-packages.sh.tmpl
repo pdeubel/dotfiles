@@ -10,7 +10,8 @@ sudo pacman -Syu \
    dolphin ark ranger \
    networkmanager network-manager-applet \
    exa dunst feh picom polybar rofi ttf-font-awesome ttf-hack noto-fonts \
-   
+   pipewire wireplumber pipewire-alsa pipewire-jack pipewire-pulse \
+
    {{- /* These packages will only be installed on a private laptop at home */ -}}
    {{- if eq .machinetype "home" }}
    nextcloud-client kdeconnect borg \
@@ -28,7 +29,7 @@ git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-bin && cd /tmp/yay-bin 
 # downloads packages from AUR
 yay -S \
     betterlockscreen rofi-greenclip spotify \
-    
+
     {{- if eq .machinetype "home" }}
     anki
     {{- end }}
