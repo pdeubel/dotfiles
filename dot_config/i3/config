@@ -237,7 +237,7 @@ bindsym $mod+Control+l exec i3lock-fancy-rapid 10 3
 exec --no-startup-id xset s 300 300
 # Power-off display after 15 min (900) (the other two 900 values don't do anything on newer displays apparently); dpms times are independent of the screen saver times
 exec --no-startup-id xset dpms 900 900 900
-exec --no-startup-id xss-lock -n $HOME/Scripts/dim-screen.sh -- i3lock-fancy-rapid 10 3
+exec --no-startup-id xss-lock -n $HOME/Scripts/dim-screen.sh -- betterlockscreen -l
 
 # -------------------------------------------------------------
 
