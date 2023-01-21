@@ -39,7 +39,7 @@ info "Pruning repository"
 
 borg prune                          \
     --list                          \
-    --prefix '$(hostname)-'         \
+    --glob-archives '{hostname}-*'  \
     --keep-within   7d              \
     --keep-daily    7               \
     --keep-weekly   4               \
