@@ -8,6 +8,10 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
+if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+  exec startx
+fi
+
 LOG="$HOME/profile-invocations"
 echo "-----" >>$LOG
 echo "Caller: $0" >>$LOG
