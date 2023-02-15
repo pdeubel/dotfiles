@@ -30,7 +30,7 @@ gaps outer 0
 
 # > Compositor
 
-exec --no-startup-id picom -b
+exec --no-startup-id picom -b --backend glx
 
 exec --no-startup-id dunst
 
