@@ -8,10 +8,6 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
-if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-  exec startx
-fi
-
 LOG="$HOME/profile-invocations"
 echo "-----" >>$LOG
 echo "Caller: $0" >>$LOG
@@ -41,5 +37,8 @@ export EDITOR=vim
 {{ if eq .machinetype "home" -}}
 export KAGGLE_CONFIG_DIR=$HOME/.config/kaggle
 export BORG_PASSCOMMAND='secret-$tool lookup borg-backup passphrase'
-{{ end -}}
+{{ end }}
 
+if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+  exec startx
+fi
