@@ -326,9 +326,6 @@ bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
 # this, but I do not know which one. For now I comment this out
 # bindsym XF86WLAN exec --no-startup-id $HOME/Scripts/toggle-wifi.sh
 
-# Gnome Keyring
-exec --no-startup-id /usr/bin/gnome-keyring-daemon --replace --components=secrets,ssh
-
 # Keyboard Layout
 exec --no-startup-id setxkbmap "de,es"
 
