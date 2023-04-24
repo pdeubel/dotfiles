@@ -36,7 +36,7 @@ export EDITOR=vim
 
 {{ if eq .machinetype "home" -}}
 export KAGGLE_CONFIG_DIR=$HOME/.config/kaggle
-export BORG_PASSCOMMAND='secret-$tool lookup borg-backup passphrase'
+export BORG_PASSCOMMAND='secret-tool lookup borg-backup passphrase'
 {{ end }}
 
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
