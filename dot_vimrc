@@ -25,3 +25,9 @@ syntax on
 " Enables hybrid line number mode 
 set number
 set relativenumber
+
+" Because the i3 config has the .tmpl extension, the correct syntax highlighting
+" is not automatically recognized. This fixes it by setting the correct syntax
+" manually.
+autocmd BufNewFile,BufRead *i3/config.tmpl set syntax=i3config
+
