@@ -6,12 +6,15 @@ R /home/pdeubel
 - home/pdeubel/.cache
 - home/pdeubel/.cargo
 - home/pdeubel/.conda
+- home/pdeubel/.Garmin
+- home/pdeubel/.gradle
 - home/pdeubel/.local/share/JetBrains/Toolbox
 - home/pdeubel/.local/share/Steam
 - home/pdeubel/.local/share/Trash
 - home/pdeubel/.lyx
 - home/pdeubel/.lyxpipe.in
 - home/pdeubel/.lyxpipe.out
+- home/pdeubel/.m2
 - home/pdeubel/.mozilla
 - home/pdeubel/.moz_log
 - home/pdeubel/.npm
@@ -20,6 +23,7 @@ R /home/pdeubel
 - home/pdeubel/.texlive
 - home/pdeubel/.thunderbird
 - home/pdeubel/.var/app/com.microsoft.Teams/cache
+- home/pdeubel/.wine
 - home/pdeubel/.zcompdump
 - home/pdeubel/.zoom
 # This is not the config folder for zsh but plugin git repos
@@ -27,6 +31,7 @@ R /home/pdeubel
 - home/pdeubel/Android
 - home/pdeubel/Applications
 - home/pdeubel/cacheDir
+- home/pdeubel/Games
 # Include main nextcloud, but ignore others
 + home/pdeubel/Nextcloud
 - home/pdeubel/Nextcloud*
