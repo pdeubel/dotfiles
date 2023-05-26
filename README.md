@@ -1,5 +1,18 @@
 # Extra configuration
 
+## Chezmoi configuration
+
+I utilize some environment variables in the dotfiles that are specified via the chezmoi configuration file. To do this, create the file `~/.config/chezmoi/chezmoi.yaml` and add the following to it:
+
+```yaml
+data:
+  email: # Your email address
+  name: # Your name
+  machinetype:  # Either "home" or "work"
+```
+
+After that you can clone the repository using chezmoi and install the dotfiles using `chezmoi apply`.
+
 ## Battery Management
 
 - Install tlp tlp-rdw
