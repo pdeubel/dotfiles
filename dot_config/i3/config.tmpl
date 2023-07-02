@@ -183,7 +183,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10; workspace $ws0
 
 # > Automatic startup <
 
-exec --no-startup-id /home/pdeubel/Scripts/daily-bing-image-wallpaper.sh
+exec_always --no-startup-id feh --bg-fill -- ~/Pictures/pexels-charles-parker-5847761.jpg
 exec --no-startup-id nextcloud
 exec --no-startup-id firefox
 exec --no-startup-id /usr/lib/kdeconnectd
@@ -213,6 +213,9 @@ workspace $ws3 output DP-1
 workspace $ws4 output eDP-1
 workspace $ws5 output eDP-1
 
+# Switch desktop layout to the first detected profile that is stored
+exec_always --no-startup-id autorandr --change
+
 # > Reloading <
 
 # reload the configuration file
@@ -226,7 +229,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # > Locking <
 
-bindsym $mod+Control+l exec i3lock-fancy-rapid 10 3 
+bindsym $mod+Control+l exec betterlockscreen -l
 
 # In theory: Dim screen after 5 minutes (300s), lock it after another 5 min
 exec --no-startup-id xset s 300 300
