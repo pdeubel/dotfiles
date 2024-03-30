@@ -30,7 +30,7 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=1
 # Includes user's private bin directories
 PATH="$HOME/.local/bin:$PATH"
 
-export SSH_AUTH_SOCK=/run/user/$(id -u)/keyring/ssh
+export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh
 
 export EDITOR=vim
 
