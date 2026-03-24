@@ -10,7 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 # > Modifier Key <
-set $mod Mod4
+set $mod Mod1
 
 # -------------------------------------------------------------
 
@@ -40,6 +40,8 @@ exec --no-startup-id dunst
 # VPN passwords in the keyring
 exec --no-startup-id nm-applet
 
+# Enable wifi on startup
+exec --no-startup-id nmcli radio wifi on
 # -------------------------------------------------------------
 
 # > Font <
@@ -188,6 +190,7 @@ exec --no-startup-id nextcloud
 exec --no-startup-id firefox
 exec --no-startup-id /usr/lib/kdeconnectd
 exec --no-startup-id kdeconnect-indicator
+exec --no-startup-id blueman-applet
 
 # -------------------------------------------------------------
 
